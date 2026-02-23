@@ -1,0 +1,139 @@
+/* ====== Global Styles ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #121212; /* main dark background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ====== Container ====== */
+.container {
+    background: linear-gradient(135deg, #1DB95433, #121212); /* green shade glow */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(29, 185, 84, 0.6); /* green glow effect */
+    width: 600px; /* bigger width */
+    text-align: center;
+}
+
+/* ====== Header ====== */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #1DB954;
+}
+
+header p {
+    margin: 5px 0 25px 0;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+/* ====== Search & Category ====== */
+.controls-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.search-input, .category-select {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-input {
+    width: 65%;
+    background: #282828;
+    color: #fff;
+}
+
+.category-select {
+    width: 30%;
+    background: #282828;
+    color: #fff;
+}
+
+/* ====== Playlist ====== */
+.playlist {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+
+.playlist li {
+    background: #282828;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.playlist li:hover {
+    background: #1DB954;
+    color: #000;
+    box-shadow: 0 0 10px #1DB954;
+}
+
+/* ====== Audio Controls ====== */
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.player-controls button {
+    padding: 15px 22px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #1DB954;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.player-controls button:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px #1DB954;
+}
+
+/* ====== Volume ====== */
+.volume-control {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.volume-control input[type="range"] {
+    cursor: pointer;
+    width: 200px;
+}
+
+/* ====== Scrollbar for playlist ====== */
+.playlist::-webkit-scrollbar {
+    width: 8px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background: #1DB954;
+    border-radius: 10px;
+}
+
+.playlist::-webkit-scrollbar-track {
+    background: #181818;
+}
