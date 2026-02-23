@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  📸 InstaLite
+  <a href="login.html" style="float:right;color:red;">Logout</a>
+</header>
+
+<div class="container">
+
+<div class="card">
+  <h3>Create Post</h3>
+  <textarea id="post" placeholder="What's on your mind?"></textarea>
+  <button onclick="postData()">Post</button>
+</div>
+
+<h3>Feed</h3>
+<div id="posts"></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
